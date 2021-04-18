@@ -1,0 +1,14 @@
+ion-tab-bar {
+	height: 4rem;
+	border-radius: 20px 20px 0px 0px;
+	--color: #fafafa;
+}
+
+ion-tab-button {
+	opacity: 1;
+	transition: opacity 250ms ease, color 250ms ease;
+}
+
+ion-tab-button:not(.tab-selected) {
+	opacity: 0.3;
+}

@@ -1,0 +1,9 @@
+.habitcard_body {
+	border-radius: 1rem;
+	background-color: var(--ion-color-step-200);
+	padding: 1rem;
+}
+
+.habitcard_body h5 {
+	margin: 0;
+}
