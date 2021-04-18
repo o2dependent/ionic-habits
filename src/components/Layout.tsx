@@ -1,9 +1,13 @@
 import { IonContent, IonPage } from "@ionic/react";
 import React from "react";
 
-interface Props {}
+interface Props {
+	computedMatch?: any;
+}
 
-export const Layout: React.FC<Props> = ({ children }) => {
+export const Layout: React.FC<Props> = ({ computedMatch, children }) => {
+	const title = computedMatch?.path?.split("/")[1];
+
 	return (
 		<IonPage>
 			<IonContent fullscreen>
@@ -24,9 +28,10 @@ export const Layout: React.FC<Props> = ({ children }) => {
 							style={{
 								fontSize: "2.25rem",
 								textAlign: "center",
+								textTransform: "capitalize",
 							}}
 						>
-							Today
+							{title}
 						</h1>
 					</div>
 					<div
