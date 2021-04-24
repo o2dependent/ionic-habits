@@ -65,6 +65,7 @@
 ion-slide.swiper-slide {
 	display: flex;
 	align-items: flex-start;
+	gap: 1rem;
 }
 
 #headerslide__container {
